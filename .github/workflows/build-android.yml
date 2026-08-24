@@ -117,6 +117,7 @@ jobs:
             echo "APK output tidak ditemukan!"
             exit 1
           fi
+          APK="${APK#./}"
           echo "apk_path=$APK" >> "$GITHUB_OUTPUT"
           echo "APK: $APK"
 
